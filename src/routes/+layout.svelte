@@ -26,13 +26,13 @@
 	}
 
 	main {
+		background: var(--tertiaryColor);
 		flex: 1;
 		display: flex;
 		flex-direction: row;
 		gap: var(--baseLineGrid);
 		padding: 1rem;
 		width: 100%;
-		max-width: 128rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 		border: 1px solid black;
