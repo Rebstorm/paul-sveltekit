@@ -1,0 +1,40 @@
+<script>
+	import Header from '../components/Header.svelte';
+	import Footer from '../components/Footer.svelte';
+	import Navigation from '../components/Navigation.svelte';
+	import './styles.css';
+</script>
+
+<div class="app">
+	<Header />
+
+	<main>
+		<Navigation />
+		<slot />
+	</main>
+
+	<Footer />
+
+
+</div>
+
+<style>
+	.app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	main {
+		flex: 1;
+		display: flex;
+		flex-direction: row;
+		gap: var(--baseLineGrid);
+		padding: 1rem;
+		width: 100%;
+		max-width: 128rem;
+		margin: 0 auto;
+		box-sizing: border-box;
+		border: 1px solid black;
+	}
+</style>
