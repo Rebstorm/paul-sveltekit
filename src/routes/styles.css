@@ -14,6 +14,8 @@
     color: var(--fontColor);
     --baseLineGrid: 2rem;
     --baseLineGridS: 1rem;
+
+    --mobileView: 390px;
 }
 
 a {
@@ -27,8 +29,8 @@ a {
     }
 }
 
-/* Phones */
-@media only screen and (max-width: 320px) {
+/* Phones,s lightly different layout. */
+@media only screen and (max-width: var(--mobileView)) {
     :root {
         --baseLineGrid: 4rem;
         --baseLineGridS: 2rem;

@@ -56,6 +56,11 @@
     }
 
     @media only screen and (max-width: 800px) {
+
+        nav {
+            height: 2rem;
+        }
+
         .desktop {
             display: none;
         }
